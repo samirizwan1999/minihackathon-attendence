@@ -33,7 +33,7 @@ const db = getFirestore(app);
 const auth = getAuth();
 
 
-let submit = document.getElementById("register");
+let submit = document.getElementById("submit");
 
 const submission = () => {
     let timings = document.getElementById("timings").value;
@@ -62,15 +62,32 @@ const submission = () => {
 submit.addEventListener('click', submission)
 
 
-
-
-function showClass(id) {
-    document.getElementById('chatPanel').removeAttribute('style');
-    document.getElementById('divStart').setAttribute('style', 'display:none');
-
-    hideChatList();
+let register = document.getElementById('register');
+const regist = () => {
+    event.preventDefault();
+    let name = document.getElementById('name').value;
+    let fname = document.getElementById('fname').value;
+    let rolNumb = document.getElementById('rolNumb').value;
+    let contact = document.getElementById('contact').value;
+    let cnic = document.getElementById('cnic').value;
+    let course = document.getElementById('cours').value;
+    addDoc(collection(db, "Students"), {
+        name: name,
+        fname: fname,
+        rolNumb: rolNumb,
+        contact: contact,
+        cnic: cnic,
+        course: course
+    });
 }
 
+register.addEventListener('click', regist);
+
+function showClass() {
+    document.getElementById('chatPanel').removeAttribute('style');
+    document.getElementById('divStart').setAttribute('style', 'display:none');
+}
+console.log(showClass)
 function showChatList() {
     document.getElementById('side-1').classList.remove('d-none', 'd-md-block');
     document.getElementById('side-2').classList.add('d-none')
