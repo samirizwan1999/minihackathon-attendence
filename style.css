@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main-div{
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #F56C96;
+}
+.inner{
+    width: 40vw;
+    background-color: #181F4B;
+    padding: 100px 50px;
+    border-radius: 5px;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0,0,0,0.4);
+    margin-top: 50px;
+}
+label{
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: .8px;
+    margin-bottom: 0.3em;
+    display: block;
+    margin-top: 1em;
+    color: #F46B95;
+}
+ul li {
+    color: white;
+}
+input{
+    margin-bottom: 30px;
+    width: 100%;
+    color: inherit;
+    border-radius: 5px;
+    padding: 0.9em 1.2em;
+    min-height: 47px;
+    box-shadow: none;
+    border: 1px solid #dedede;
+}
+.submission{
+    text-align: center;
+    margin: 25px 0px 0px 0px;
+}
+button{
+    background-color: #11C4E0 !important;
+    border-radius: 20px !important;
+    border-color: none !important; 
+}
+
+
+/* Registration Form Start  */
+.inner-div {
+    width: 60vw;
+    padding: 50px;
+    margin: 20px 0px;
+    background-color: #181F4B;
+    box-shadow: 0px 20px 20px 10px rgb(0 0 0 / 50%);
+
+}
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+select {
+    margin: 10px 0 0 0;
+    min-height: 2em;
+    border-radius: 8px;
+    width: 100%;
+    padding: 1.2em 1.2em;
+    border: 1px solid #dedede;
+    font-size: 13px !important;
+    color: #8a8a8a;
+}
+h1{
+    text-align: center;
+    font-weight: bold !important;
+    margin-bottom: 30px !important;
+    color: #F46B95;
+}
+.spinner {
+    text-align: center;
+    margin-top: 20px;
+}
+.spinner-border.text-success {
+    display: none;
+}
+/* input[type=text]:focus {
+    background-color: green;
+  } */
+/* Registration Form End  */
+
+
+
+/* DashBoard Page  */
+table tr td {
+    border: 1px solid #dedede;
+    width: 10%;
+    padding: 10px;
+}
+body.Results {
+    margin: 50px;
+}
+/* Dashboard Page End  */
+
+
+input::placeholder {
+    font-size: 13px;
+    color: #8a8585;
+}
+input#picture {
+    background-color: white;
+    font-size: 13px;
+    color: #8a8a8a;
+}
+option{
+    font-size: 15px;
+    color: #8a8a8a;
+    padding: 5px 0px !important;
+}
+input#dob{
+    font-size: 14px;
+    color: #8a8a8a;
+    padding: 1.2em 1.2em;
+}
+ul {
+    padding: 40px;
+}
+
+.submit-form button{
+    border-radius: 5px !important;
+    background-color: transparent !important;
+    border-color:#F46B95 !important;
+    padding: 10px 40px;
+    margin: auto;
+}
+button.btn.btn-outline-danger:hover {
+    background-color: #F46B95 !important;
+    color: white !important;
+}
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #F46B95 0%, #d34c74 51%, #F46B95  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white !important;            
+    box-shadow: 0 50 10px #8a8a8a;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff !important;
+    text-decoration: none;
+  }
+  .submit-form {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none !important;
+}
+
+th {
+    border: 1px solid !important;
+    padding: 10px 15px;
+    background-color: #181F4B;
+    color: white;
+}
+
+input:hover {
+    border-color: #F46B95;
+}
+input:focus {
+    border: 2px solid;
+    border-color: #F46B95 !important;
+    box-shadow: none!important;
+    outline: none!important;
+}
+
+select:focus{
+    border: 2px solid;
+    border-color: #F46B95 !important;
+    box-shadow: none!important;
+    outline: none!important;
+}
+input#user:hover{
+    border-color: #F46B95;
+}
+input#user:focus{
+    border: 2px solid;
+    border-color: #F46B95 !important;
+    box-shadow: none!important;
+    outline: none!important;
+}
+option:hover{
+    color: #F46B95 !important;
+}
+.inner-div p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+h5 a {
+    color: #181f4b;
+    font-weight: bold;
+}
+h5 {
+    color: white;
+    padding: 30px 0px;
+}
+.inner p {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (min-width:768px) and (max-width:1200px){
+    .inner{
+        width: 60vw !important;
+    }
+}
+@media screen and (min-width:200px) and (max-width:767px){
+    .inner{
+        width: 85vw !important;
+    }
+}
+
+
+
+
+

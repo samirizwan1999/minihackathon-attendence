@@ -1,0 +1,131 @@
+body, html{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body{
+    font-family: 'Segoe UI','Helvetica', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(180deg, #dddbd1, #d2dbdc);
+}
+
+.top{
+    height: 15%;
+    width: 100%;
+    background-color: #00A783;
+    position: fixed;
+    z-index: -1;
+}
+
+.dashboard {
+    height: calc(100% - 40px);
+    width: 95%;
+    background-color: white;
+    margin: 20px auto;
+    box-shadow: 0 6px 18px rgba(11,20,26,.05);
+    padding: 0;
+}
+
+.form-rounded{
+    border-radius: 1rem;
+}
+
+
+.name{
+    color: #111b21;
+    font-size: 17px;
+}
+.under-name{
+    color: #667781;
+    font-size: 14px;
+}
+.icon{
+    font-size: 20px;
+    color: #9ca1a3;
+}
+.friend-pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.chat-pic{
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+}
+.recieve{
+    border-radius: 1rem;
+    background-color: lightgreen;
+    padding: 10px 15px;
+    display: inline-block;
+}
+.time{
+    font-size: 10px;
+    color: #545454;
+    margin-left: 5px;
+    margin-top: 10%;
+}
+.sent{
+    border-radius: 1rem;
+    background-color: whitesmoke;
+    padding: 10px 15px;
+    display: inline-block;
+    float: right;
+}
+.card{
+    height: 94vh;
+    background: #181F4B !important;
+}
+
+#messages{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.list-group-item {
+    padding: 30px 20px !important;
+    background: #181F4B !important;
+    color: white !important;
+
+}
+.card-header {
+    height: 12.2%;
+    text-align: center;
+}
+.card-header.inside{
+    background-color: #ece9e9;
+}
+.btn-grad {
+    background-image: linear-gradient(to right, #F46B95 0%, #d34c74 51%, #F46B95  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white !important;            
+    box-shadow: 0 50 10px #8a8a8a;
+    border-radius: 10px;
+    display: block;
+    border-radius: 5px !important;
+    background-color: transparent !important;
+    border-color: #F46B95 !important;
+    padding: 10px 40px;
+    margin: auto;
+  }
+  .class-details {
+    height: 100% !important;
+    padding: 100px 20px;
+}
+.row.part {
+    padding-bottom: 40px;
+}
+@media screen and (min-width:992px){
+    .class-details{
+        padding: 100px 150px;
+    }
+}
